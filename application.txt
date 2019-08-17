@@ -1,0 +1,26 @@
+
+#spring.main.banner-mode=off
+
+#Environment Setup
+spring.profiles.active=dev
+server.error.whitelabel.enabled=false
+#logging slf4J
+logging.level.org.springframework:DEBUG
+logging.file=logs.log
+
+#View Settings
+#spring.mvc.view.prefix=/views/
+#spring.mvc.view.suffix=.jsp
+
+#server setting
+server.port=8081
+
+# create and drop tables and sequences, loads import.sql
+spring.jpa.hibernate.ddl-auto=none
+
+# Oracle settings
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=sys as sysdba
+spring.datasource.password=system
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+#spring.datasource.driver-class-oracle.jdbc.driver.OracleDriver
